@@ -1,0 +1,52 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.HashMap;
+
+
+
+class ListToMap
+{
+	
+	HashMap<String, String> Converter(List<List<String>> initialList, int index) {
+	    HashMap<String, String> items = new HashMap<>();
+	    for (int i = 0; i < initialList.size(); i++) {
+		    items.put(initialList.get(i).get(index), "-");
+		}
+	    return items;
+	}
+	
+	ArrayList<String> Converter1(List<List<String>> secondList, int index) {
+	    ArrayList<String> items = new ArrayList<String> ();
+	    for (int i = 0; i < secondList.size(); i++) {
+		    items.add(secondList.get(i).get(index));
+		}
+	    return items;
+	}
+	
+	int Headers(List<String> headerIndex) {
+	    for(int i = 0; i < headerIndex.size(); i++) {
+	        if(headerIndex.get(i).toLowerCase().contains("name")) {
+	            return i;
+	        }
+	    }
+	   return 0;
+	    
+	}
+	
+	void Result(List<List<String>> firstFileList, List<List<String>> secondFileList, List<String> firstFileHeaders, List<String> secondFileHeaders) {
+	    int headerValue1 = Headers(headers1);
+	    int headerValue2 = Headers(headers2);
+	    
+	    HashMap<String, String> firstFileItems = Converter(firstFileList, firstFileHeaders);
+	    ArrayList<String> secondFileItems = Converter1(secondFileList, secondFileHeaders);
+	    
+	    for(int x = 0; x < secondFileItems.size(); x++) {
+	        if(!firstFileItems.containsKey(secondFileItems.get(x))) {
+	            System.out.print(secondFileItems.get(x) + "\n");
+	        }
+	    
+	    }
+	}
+	
+}
