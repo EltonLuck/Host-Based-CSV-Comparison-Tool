@@ -6,6 +6,12 @@ Designed to simulate structured log or asset comparison workflows, where dataset
 How It Works
 	•	Reads two CSV files
 	•	Parses records into memory
-	•	Maps entries by hostname
+	•	Maps entries by name
 	•	Compares attributes
 	•	Outputs discrepancies
+
+Sample output:
+""" Mismatched Record Names:
+Hostname1
+Hostname2
+Hostname3 """
