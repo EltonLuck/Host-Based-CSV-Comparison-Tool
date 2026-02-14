@@ -38,7 +38,7 @@ class ListToMap
 	    HashMap<String, String> firstFileItems = InitialConverter(firstFileList, headerValue1);
 	    ArrayList<String> secondFileItems = SecondConverter(secondFileList, headerValue2);
 
-		System.out.println("Mismatched Record Names:\n");
+		System.out.println("Mismatched Record Names:");
 	    
 	    for(int x = 0; x < secondFileItems.size(); x++) {
 	        if(!firstFileItems.containsKey(secondFileItems.get(x))) {
