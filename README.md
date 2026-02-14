@@ -11,7 +11,9 @@ How It Works
 	•	Outputs discrepancies
 
 Sample output:
-""" Mismatched Record Names:
+```
+Mismatched Record Names:
 Hostname1
 Hostname2
-Hostname3 """
+Hostname3
+```
