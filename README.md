@@ -1,5 +1,5 @@
 # Host-Based-CSV-Comparison-Tool
-Java-based tool that compares two structured CSV datasets using hostname as a primary key and identifies mismatched, missing, or inconsistent records.
+Java-based tool that compares two structured CSV datasets using name as a primary key and identifies mismatched, missing, or inconsistent records.
 
 Designed to simulate structured log or asset comparison workflows, where datasets must be correlated to detect discrepancies.
 
